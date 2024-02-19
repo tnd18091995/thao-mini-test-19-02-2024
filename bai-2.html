@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="nhapvao()">Nhập số</button>
+<button onclick="dem()">Đếm số các phần tử</button>
+</body>
+</html>
+<script>
+    let list = new Array()
+    function nhapvao() {
+        let nhapso = +prompt('Nhập số')
+        list.push(nhapso)
+        console.log(list)
+    }
+    function dem() {
+        document.write('Số các phần tử là ', list.length)
+    }
+</script>

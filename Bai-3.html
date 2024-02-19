@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="nhapvao()">Nhập số</button>
+<button onclick="tong()">Tổng các phần tử</button>
+</body>
+</html>
+<script>
+    let list = new Array()
+    function nhapvao() {
+        let nhapso = +prompt('Nhập số')
+        list.push(nhapso)
+        console.log(list)
+    }
+    let sum =0
+    function tong() {
+        for(i=0; i< list.length;i++) {
+            sum+=list[i]
+        }
+        document.write("Tổng các phần tử là ", sum)
+    }
+</script>

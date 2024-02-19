@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<button onclick="nhapvao()">Nhập số</button>
+<button onclick="timsochan()">Tìm số các số chẵn</button>
+</body>
+</html>
+<script>
+  let list = new Array()
+  function nhapvao() {
+    let nhapso = +prompt('Nhập số')
+    list.push(nhapso)
+    console.log(list)
+  }
+  function timsochan() {
+    let count = 0
+    for (let i =0; i<list.length ;i++){
+      if (list[i]%2===0) {
+        count++
+      }
+    }
+    document.write('Số các số chẵn là ', count)
+  }
+</script>
